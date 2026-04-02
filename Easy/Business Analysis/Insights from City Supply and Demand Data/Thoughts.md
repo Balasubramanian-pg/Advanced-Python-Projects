@@ -47,7 +47,6 @@ This response is structured like a Jupyter Notebook, providing a clear and repro
 3.  **Explanation of Approach:** Before each code chunk, the logic and methodology are explained.
 4.  **Code, Results, and Visualizations:** Each section includes the necessary code, its output, and any relevant plots to support the findings.
 
-***
 
 ## Uber: Supply and Demand Analysis
 
