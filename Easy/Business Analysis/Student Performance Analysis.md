@@ -107,7 +107,6 @@ This response is designed like a Jupyter Notebook. It includes:
 3.  **Code in Chunks with Explanations:** Each step is explained before the code is presented to clarify the methodology.
 4.  **Visualizations, Statistical Tests, and Actionable Insights:** The claims are supported by plots and statistical tests, culminating in a set of recommendations for the schools.
 
-***
 
 ## Student Performance Analysis
 
