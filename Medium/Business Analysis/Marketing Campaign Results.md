@@ -73,7 +73,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Clear Explanations:** Before each major code block, the methodology, assumptions, and choices are clearly explained, framed for a business audience (marketing, sales, and operations teams).
 4.  **A Complete Solution:** The notebook provides code, visualizations, and a clear narrative that directly answers all the questions.
 
-***
 
 # Freedom Debt Relief: Marketing Campaign Performance Analysis
 
@@ -82,7 +81,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 **Date:** [Current Date]
 **Subject:** Analysis of the Recent Marketing Campaign's Success and Future Recommendations
 
----
 
 ### **1. Executive Summary**
 
@@ -97,7 +95,6 @@ This report provides a comprehensive analysis of the recent $5 million marketing
 **Core Recommendation:**
 Future campaigns should **double down on the successful segments**, increasing targeting and tailoring messaging for younger demographics in the South and West. Furthermore, we should continue to invest in marketing, as it has proven to be a highly profitable growth lever for the business.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -170,7 +167,6 @@ deposits.to_csv('deposit_data.csv', index=False)
 print("Sample datasets created successfully.")
 ```
 
----
 
 ### **3. Data Loading and Preparation**
 
@@ -229,7 +225,6 @@ print(f"Average Monthly Deposit: ${avg_monthly_deposit:,.2f}")
 print(f"Assumed Lifetime Value (LTV) per Client: ${LTV_PER_CLIENT:,.2f}")
 ```
 
----
 ### **4. Question 1: Was the Marketing Campaign Successful?**
 
 To assess the campaign's success, we need a clear metric. While metrics like brand awareness are important, the most direct, quantitative measure of success for a marketing campaign is **Return on Investment (ROI)**.
@@ -282,7 +277,6 @@ print(f"Return on Investment (ROI): {roi:.2%}")
 **Conclusion for Question 1:**
 The marketing campaign was **highly successful**. The data shows a dramatic spike in new client acquisitions in Month 3, an increase of **66%** over the pre-campaign baseline. This lift translates to an estimated **$11.7 million in total lifetime value** from the incremental clients. After accounting for the $5 million cost, the campaign generated a net profit of **$6.7 million**, yielding an impressive **ROI of 134%**.
 
----
 ### **5. Question 2: Recommendations for Future Campaigns**
 
 To improve future performance, we need to understand *who* the campaign resonated with the most. We can do this by analyzing the "lift" in acquisitions across different customer segments.
@@ -325,7 +319,6 @@ Based on the segment-level analysis, we recommend the following adjustments to f
 2.  **Focus on the Younger Demographic:** The **18-34 age group** showed the largest increase in acquisitions (80%). Marketing creative, messaging, and channel selection should be tailored to appeal to this younger audience, who appear to be highly receptive to our debt relief proposition.
 3.  **Test and Optimize for Underperforming Segments:** The **Northeast** region and the **51-64** age group showed the lowest lift. We should conduct A/B tests with different messaging or offers for these segments to understand what resonates with them, or consider reducing marketing spend if they prove to be a less efficient target audience.
 
----
 ### **6. Question 3: Impact of Postponing the Campaign**
 
 What would have happened if we ran the campaign in Month 6 instead of Month 3?
