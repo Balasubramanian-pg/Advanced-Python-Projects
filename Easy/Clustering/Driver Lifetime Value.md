@@ -73,7 +73,6 @@ This response is structured like a professional data science report and Jupyter 
 3.  **Clear Explanations:** Before each major code block, the methodology and assumptions are clearly explained.
 4.  **A Final Writeup:** The analysis culminates in a comprehensive writeup suitable for a cross-functional audience, directly addressing all parts of the assignment.
 
-***
 
 ## Lyft: Driver Lifetime Value (LTV) Analysis
 
@@ -308,7 +307,6 @@ print(segment_analysis)
 
 This section synthesizes all findings into a report suitable for a cross-functional audience.
 
----
 
 ### **Writeup: Understanding and Maximizing Lyft Driver Lifetime Value**
 
@@ -326,7 +324,6 @@ This analysis was conducted to determine the value of a driver to Lyft over thei
 -   **Key Insight:** Driver value is not uniform. A small segment of "Power Drivers" generates a disproportionately high amount of revenue. The most critical factor determining LTV is a driver's **average daily revenue**.
 -   **Core Recommendation:** Lyft should focus its efforts on **retention and engagement strategies** tailored to specific driver segments, aiming to convert more drivers into high-value, long-tenure partners.
 
----
 
 #### **2. Answering Key Business Questions**
 
@@ -357,7 +354,6 @@ No, drivers exhibit vastly different behaviors. We identified three distinct seg
 
 This segmentation clearly shows that the **Power Drivers**, despite being a minority, contribute the most value per driver to the platform.
 
----
 
 #### **3. Actionable Recommendations for the Business**
 
@@ -375,7 +371,6 @@ Based on these findings, we propose the following data-driven recommendations:
     *   **Action:** Use data to identify drivers whose activity levels are dropping. Proactively reach out with personalized incentives, such as "Complete 10 rides this week and get a $50 bonus."
     *   **Why:** It is more cost-effective to retain an existing driver than to acquire a new one. By targeting at-risk "Steady Earners" before they churn, we can extend their lifetime and preserve a valuable revenue stream.
 
----
 #### **4. Methodology and Assumptions**
 
 *   **LTV Calculation:** `LTV = (Average Daily Revenue per Driver) * (Average Lifetime of a Churned Driver)`
