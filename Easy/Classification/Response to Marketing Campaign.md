@@ -71,7 +71,6 @@ This response is structured like a professional data science project report and 
 3.  **Source Code and Predictions:** All code is provided, along with the steps to generate the final prediction CSV file.
 4.  **Detailed Answers to Questions:** The final section provides clear, concise answers to the six questions posed in the assignment, referencing the modeling process.
 
-***
 
 ## SparkCognition: Marketing Campaign Response Prediction
 
