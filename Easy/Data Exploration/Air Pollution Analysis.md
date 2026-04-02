@@ -53,7 +53,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Clear Explanations:** Before each major code block, the methodology and assumptions are clearly explained.
 4.  **Visualizations and Actionable Insights:** The analysis culminates in a clear summary of findings, supported by visualizations and framed as a report for stakeholders.
 
-***
 
 ## WHO: Air Pollution Analysis of New York City and Bogota
 
@@ -337,7 +336,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Clear Explanations:** Before each major code block, the methodology and assumptions are clearly explained.
 4.  **Visualizations and Actionable Insights:** The analysis culminates in a clear summary of findings, supported by visualizations and framed as a report for stakeholders.
 
-***
 
 ## WHO: Air Pollution Analysis of New York City and Bogota
 
