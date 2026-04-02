@@ -45,7 +45,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a non-technical management audience.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear set of findings and recommendations.
 
-***
 
 # Walmart: Black Friday Customer Purchase Behavior Analysis
 
@@ -54,7 +53,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 **Date:** [Current Date]
 **Subject:** Analysis of Customer Spending Habits on Black Friday
 
----
 
 ### **1. Executive Summary**
 
@@ -69,7 +67,6 @@ This report analyzes customer transaction data from Black Friday to understand t
 **Core Recommendation:**
 Walmart's Black Friday marketing strategy should be **multi-faceted, with a primary focus on the high-spending male demographic**, while also ensuring inclusive marketing to attract and grow the female customer base. Tailoring product promotions and marketing messages to specific age groups and city categories will likely yield the highest return on investment.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -127,7 +124,6 @@ df.to_csv('walmart_data.csv', index=False)
 print("Sample 'walmart_data.csv' created successfully.")
 ```
 
----
 
 ### **3. Data Loading and Preparation**
 
@@ -149,7 +145,6 @@ print(df.isnull().sum())
 ```
 **Observation:** The dataset is clean and contains no missing values, allowing us to proceed directly to the analysis.
 
----
 
 ### **4. Analysis of Customer Purchase Behavior**
 
@@ -277,7 +272,6 @@ plt.show()
 ```
 **Finding:** A few product categories dominate sales. **Categories 1, 5, and 8** are by far the most purchased items. This indicates where promotional efforts and inventory management should be most focused.
 
----
 
 ### **5. Conclusion and Actionable Recommendations**
 
