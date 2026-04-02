@@ -66,7 +66,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a data science team audience.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear summary of findings that would be useful for a forecasting model.
 
-***
 
 # Delhivery: Delivery Trip Data Analysis
 
@@ -80,7 +79,6 @@ This project aims to clean, analyze, and prepare a dataset of delivery trips for
 3.  **Exploratory Data Analysis (EDA):** Use visualizations and statistical summaries to understand the key factors influencing delivery times.
 4.  **Prepare for Modeling:** Define a clear target variable and identify the most promising features for a future predictive model.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -147,7 +145,6 @@ df.to_csv('delhivery_data.csv', index=False)
 print("Sample 'delhivery_data.csv' created successfully.")
 ```
 
----
 ### **3. Data Cleaning and Sanitization**
 
 The first step is to load the data, inspect its structure, and clean it up for analysis.
@@ -199,7 +196,6 @@ df.info()
 -   Timestamp columns are now in the correct `datetime` format.
 -   Missing values in key numerical columns have been imputed with the median, making the dataset ready for analysis.
 
----
 ### **4. Feature Engineering**
 
 Now, we will create new features from the existing data to better capture patterns that might influence delivery times.
@@ -239,7 +235,6 @@ print("\n--- New Features Created ---")
 print(df[['trip_duration_minutes', 'day_of_week', 'time_of_day', 'time_discrepancy', 'route']].head())
 ```
 
----
 ### **5. Exploratory Data Analysis (EDA)**
 
 Let's explore the data to understand what factors influence the trip duration.
@@ -293,7 +288,6 @@ plt.show()
 -   **Route Type:** `FTL` (Full Truck Load) trips have a significantly higher median duration than `Carting` trips. This is expected, as FTL usually implies longer, inter-city routes.
 -   **Time of Day:** Trips started during the **Night** have the lowest median duration, likely due to less traffic. **Morning** trips seem to take the longest, coinciding with peak traffic hours.
 
----
 ### **6. Preparation for Forecasting Models**
 
 Based on our analysis, we can now provide clear guidance to the data science team for building their forecasting models.
