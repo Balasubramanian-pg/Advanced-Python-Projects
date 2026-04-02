@@ -51,7 +51,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Clear Explanations and Visualizations:** Before each major code block, the methodology is explained. The analysis is supported by clear, business-friendly visualizations.
 4.  **A Final "Executive Summary" Writeup:** The analysis culminates in a concise summary of findings and strategic recommendations, suitable for a non-technical executive audience.
 
-***
 
 ## Netflix: Content Strategy and Growth Analysis
 
@@ -266,7 +265,6 @@ print(top_directors)
 
 This section synthesizes the findings into a high-level summary for business executives.
 
----
 
 **To:** Netflix Executive Leadership
 **From:** Data Science & Analytics
