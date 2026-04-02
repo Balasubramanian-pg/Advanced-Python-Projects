@@ -48,7 +48,6 @@ df = pd.read_csv("BeerDataScienceProject.tar.bz2", compression="bz2")
 You will need to provide a Jupyter Notebook that describes your approach as a result of this task. When you submit your answers, please also include the code you used to answer the questions with proper commenting and documentation. It should be clear how one can reproduce your results. Make sure that you include all plots you created to complete the project and explain your results.
 
 # Solution
----
 Of course. Here is a complete solution to the Evolent Health data science take-home assignment.
 
 This response is structured like a Jupyter Notebook. It includes:
@@ -57,7 +56,6 @@ This response is structured like a Jupyter Notebook. It includes:
 3.  **Explanation of the Approach:** Before each code block, I explain the logic and methodology used to solve the problem.
 4.  **Results and Visualizations:** The output of the code, including tables and plots, is displayed and interpreted.
 
-***
 
 ## Evolent Health: Beer Review Data Analysis
 
@@ -195,7 +193,6 @@ print(top_3_strongest_breweries)
 **Result:**
 Based on our synthetic data, breweries with IDs **48, 49, and 45** produce the beers with the highest average Alcohol By Volume.
 
----
 
 #### Question 2: Which year did beers enjoy the highest ratings?
 
@@ -239,7 +236,6 @@ plt.show()
 **Result:**
 According to the analysis, **2021** was the year with the highest average beer ratings. The line plot shows a general upward trend in ratings over the last decade, peaking recently.
 
----
 
 #### Question 3: Based on the users' ratings, which factors are important among taste, aroma, appearance, and palette?
 
