@@ -37,14 +37,12 @@ This response is designed as a self-contained Jupyter Notebook. It includes:
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, avoiding overly technical jargon where possible.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear recommendation for the business.
 
-***
 
 # Mokka: Credit Risk Prediction Model
 
 **Prepared by:** Balasubramanian
 **Date:** 29-07-2025
 
----
 
 ### **1. Business Objective**
 
@@ -52,7 +50,6 @@ The goal of this project is to build a machine learning model that can accuratel
 
 By accurately identifying high-risk clients, Mokka can make more informed lending decisions, thereby minimizing financial losses from defaults. The final output will be a recommended model and an analysis showing the trade-off between the approval rate and the expected default rate, which is a crucial tool for business strategy.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -127,7 +124,6 @@ df.to_csv('test_task.csv', index=False)
 print("Sample 'test_task.csv' created successfully.")
 ```
 
----
 
 ### **3. Data Exploration and Preprocessing**
 
@@ -208,7 +204,6 @@ preprocessor = ColumnTransformer(
 
 print("Preprocessing pipeline created successfully.")
 ```
----
 
 ### **4. Model Training and Selection**
 
@@ -263,7 +258,6 @@ for name, model in models.items():
 **Model Selection:**
 The **XGBoost** model demonstrated the highest and most stable performance in cross-validation, achieving the best ROC-AUC score. This means it is the most effective model at discriminating between clients who will default and those who will not. We will select **XGBoost** as our final model for this task.
 
----
 
 ### **5. Final Model and Business Application**
 
@@ -340,7 +334,6 @@ As we move from left to right (becoming more selective):
 
 For example, if we approve **100%** of applicants, our default rate is the same as the overall dataset (~9%). If we tighten our policy and only approve the **top 80%** of applicants (those with the lowest risk scores), the default rate among that group drops to around **5%**. If we are even more conservative and approve only **50%**, the default rate could fall below **2%**.
 
----
 
 ### **6. Conclusion and Recommendations**
 
