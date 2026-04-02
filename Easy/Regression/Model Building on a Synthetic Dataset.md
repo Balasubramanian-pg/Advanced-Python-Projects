@@ -43,7 +43,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Source Code and Predictions:** All code is provided, along with the steps to generate the final prediction file and the optional model object.
 4.  **A Detailed Writeup:** The analysis culminates in a concise writeup, as requested, describing the chosen techniques, important features, and estimated performance.
 
-***
 
 ## Capital One: Predictive Modeling Challenge
 
