@@ -48,7 +48,6 @@ This response is designed like a Jupyter Notebook. It includes:
 3.  **Code in Chunks with Explanations:** Each step is explained before the code is presented to clarify the methodology.
 4.  **Actionable Insights and Recommendations:** The analysis culminates in a clear summary of customer profiles and strategic recommendations for the business.
 
-***
 
 ## AeroFit: Customer Profile and Product Recommendation Analysis
 
