@@ -101,7 +101,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a non-technical audience (the "head of the SME division").
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear set of findings and recommendations.
 
-***
 
 # BCG Gamma: PowerCo Customer Churn Prediction
 
@@ -110,7 +109,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 **Date:** [Current Date]
 **Subject:** Findings and Recommendations on SME Customer Churn
 
----
 
 ### **1. Introduction & Business Objective**
 
@@ -122,7 +120,6 @@ Our analysis is structured as follows:
 -   **Business Case Analysis:** We assess the financial viability of offering a 20% discount to at-risk customers.
 -   **Recommendations & Next Steps:** We provide concrete, data-driven recommendations based on our findings.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -232,7 +229,6 @@ train_price_df.to_csv('ml_case_training_hist_data.csv', index=False)
 print("Sample datasets created successfully.")
 ```
 
----
 
 ### **3. Data Exploration, Cleaning, and Feature Engineering**
 
@@ -321,7 +317,6 @@ plt.show()
 ```
 **Finding:** Yes, there is a clear link between the sales channel and the likelihood of a customer churning. **Channel 0 and Channel 1** have noticeably higher churn rates than the other channels. This is a critical insight, suggesting that the way a customer is acquired has a lasting impact on their loyalty. It may be that these channels attract less-informed or more price-sensitive customers.
 
----
 
 ### **4. Predictive Modeling**
 
@@ -412,7 +407,6 @@ plt.show()
 2.  **Customer Antiquity:** `num_years_antig` is highly important. Newer customers are more likely to churn than long-term, loyal ones.
 3.  **Consumption Patterns:** `cons_12m` and `cons_last_month` are also significant. Changes or levels in consumption can indicate a customer's engagement or dissatisfaction.
 
----
 
 ### **5. Business Case: Evaluating the 20% Discount**
 
@@ -484,7 +478,6 @@ print(f"The optimal probability threshold to maximize profit is approximately: {
 -   **Too Low a Threshold (e.g., 0.2):** We target too many customers, including many who were not going to churn anyway. The cost of these unnecessary discounts outweighs the profit from saved customers.
 -   **Too High a Threshold (e.g., 0.8):** We become too selective and miss a large number of customers who end up churning, resulting in significant lost revenue.
 
----
 
 ### **6. Final Predictions and Recommendations**
 
