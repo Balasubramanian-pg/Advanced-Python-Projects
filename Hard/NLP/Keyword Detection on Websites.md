@@ -86,7 +86,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **A Detailed Write-up:** The analysis culminates in a comprehensive Q&A section, as requested, addressing the methodology, model performance, and potential issues.
 4.  **Final Prediction Generation:** The script generates the required `prediction.csv` file for the test set.
 
-***
 
 # PeakData: Tumor Board Detection from HTML Pages
 
@@ -96,7 +95,6 @@ The goal of this project is to build a classification system that can automatica
 
 As a bonus, we will also attempt to extract specific details about the tumor boards, such as their type (e.g., 'interdisciplinary', 'breast') and schedule (day, frequency, time). This system can help automate the process of gathering competitive intelligence and understanding the landscape of cancer care services.
 
----
 
 ### **2. Setup and Simulated Data Environment**
 
@@ -174,7 +172,6 @@ def generate_sample_data(base_dir='.'):
 generate_sample_data()
 ```
 
----
 
 ### **3. Data Loading and Preprocessing**
 
@@ -216,7 +213,6 @@ print("\nData preprocessing complete. Sample of training data:")
 print(train_df[['doc_id', 'target', 'text']].head())
 ```
 
----
 
 ### **4. Feature Engineering**
 
@@ -238,7 +234,6 @@ tfidf_vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 2), max
 print("\nFeature engineering strategy defined (TF-IDF).")
 ```
 
----
 
 ### **5. Model Training and Validation**
 
@@ -289,7 +284,6 @@ for name, model in models.items():
 **How do you expect your model to perform on test data?**
 Based on the cross-validation results, all models perform perfectly on this simple, synthetic dataset. In a real-world scenario, the scores would be lower, but the hierarchy would likely remain. I expect the **XGBoost model** to be the best performer. It achieved a perfect F1-score and ROC-AUC of 1.0 in cross-validation. I would expect its performance on the unseen test data to be very high as well (likely >0.95 F1-score), as the task of identifying keywords like "tumor board" is quite distinct and TF-IDF is very effective at capturing this.
 
----
 
 ### **6. Final Prediction and Bonus Task**
 
@@ -373,7 +367,6 @@ else:
     print("\nNo pages predicted to have tumor boards, skipping bonus task.")
 ```
 
----
 
 ### **7. Final Q&A Write-up**
 
