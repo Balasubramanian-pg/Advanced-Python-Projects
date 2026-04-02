@@ -85,7 +85,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Clear Explanations:** Before each major code block, the methodology and choices are clearly explained, framed as a report to stakeholders.
 4.  **A Complete Solution:** The notebook provides code, visualizations, and a clear narrative that directly answers all the questions, including building a predictive model.
 
-***
 
 # Capital One: NYC Green Taxi Trip Analysis (Sept 2015)
 
@@ -93,7 +92,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 This analysis explores the NYC Green Taxi trip data from September 2015 to understand trip characteristics, passenger behavior, and the factors influencing driver tips. The ultimate goal is to provide data-driven insights that can help the NYC Taxi and Limousine Commission (TLC) and other stakeholders make informed decisions.
 
----
 
 ### **0. Setup and Data Generation**
 
@@ -166,7 +164,6 @@ def generate_sample_data(n_samples=100000):
 generate_sample_data()
 ```
 
----
 ### **Question 1: Data Loading**
 **Approach:** Load the CSV file into a Pandas DataFrame and report its dimensions.
 
@@ -186,7 +183,6 @@ print(f"Data loaded successfully.")
 print(f"The dataset contains {rows:,} rows and {cols} columns.")
 ```
 
----
 ### **Question 2: Trip Distance Histogram**
 **Approach:** Plot a histogram of the `Trip_distance` column. Since the distribution is likely skewed, we'll plot it on both a linear and a logarithmic scale to better understand its structure.
 
@@ -217,7 +213,6 @@ print("Trip Distance Statistics:\n", df['Trip_distance'].describe())
     2.  **Airport Trips:** The smaller peaks and long tail in the distribution likely represent trips to and from major airports (JFK, LaGuardia, Newark), which are significantly longer than typical intra-borough travel.
     3.  **Data Quality:** The presence of very short trips (<0.1 miles) might indicate data quality issues, such as trips that were cancelled immediately after starting or meter malfunctions.
 
----
 ### **Question 3: Airport Trips Analysis**
 **Approach:**
 1.  Group the data by the hour of the day and calculate the mean and median `Trip_distance`.
@@ -274,7 +269,6 @@ else:
 -   The hourly distance plot shows that trips are, on average, longer during the overnight and early morning hours. This is likely due to less traffic, allowing for longer-distance (e.g., airport) trips to be completed more quickly and thus being more common.
 -   Airport trips, as hypothesized, are a distinct and valuable segment. They are significantly longer and have a much higher average fare than typical trips.
 
----
 ### **Question 4: Predictive Model for Tip Percentage**
 **Approach:**
 1.  **Create Target Variable:** Derive `tip_percentage`. We must only consider trips paid by credit card (`Payment_type == 1`), as cash tips are not recorded.
@@ -330,7 +324,6 @@ print(f"Root Mean Squared Error (RMSE): {rmse:.3f} percentage points")
 **Model Insights:**
 The Random Forest model provides a reasonable, though not perfect, prediction of tip percentage. An R-squared of ~0.2-0.4 is typical for this kind of behavioral prediction task. This indicates that while our features (`Trip_distance`, `Fare_amount`, etc.) have some predictive power, a large portion of tipping behavior is driven by unobserved factors like service quality, passenger mood, or social norms.
 
----
 ### **Question 5: Option A - Distributions**
 
 #### **a) Build a derived variable representing the average speed**
