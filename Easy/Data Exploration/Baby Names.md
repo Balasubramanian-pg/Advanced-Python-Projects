@@ -55,7 +55,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Clear Explanations:** Before each major code block, the methodology and assumptions are clearly explained.
 4.  **A Comprehensive Writeup:** The analysis culminates in a clear writeup of the findings, including an open-ended insight in Part B, supported by visualizations.
 
-***
 
 ## Capital One: U.S. Baby Names Analysis
 
