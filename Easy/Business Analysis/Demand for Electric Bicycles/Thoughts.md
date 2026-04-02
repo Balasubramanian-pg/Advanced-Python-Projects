@@ -64,7 +64,6 @@ This response is designed like a Jupyter Notebook. It includes:
 3.  **Code in Chunks with Explanations:** Each step is explained before the code is presented.
 4.  **Statistical Tests and Visualizations:** The claims are supported by a statistical model (Linear Regression) and visualized with relevant plots.
 
-***
 
 ## Yulu: Understanding Demand for Shared Electric Bicycles
 
@@ -263,7 +262,6 @@ plt.show()
 - **Working Day:** Median demand is higher on working days, driven by commuters.
 - **Weather:** Demand drops significantly as weather conditions worsen. Clear weather sees the highest usage.
 
----
 
 ```python
 # --- Correlation Analysis for Numerical Features ---
