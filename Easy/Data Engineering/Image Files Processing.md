@@ -49,7 +49,6 @@ This response is designed like a professional data science script and report. It
 3.  **Explanation of the Approach:** The code is broken down into logical functions with clear explanations of the methodology, covering image processing, data extraction, and file system operations.
 4.  **Final Output Generation:** The script creates the required `images.csv` file and sorts the image files into the specified subfolders.
 
-***
 
 ## Amazon: Image Processing and Data Framing
 
