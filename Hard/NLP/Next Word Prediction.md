@@ -46,7 +46,6 @@ This response is designed as a self-contained Jupyter Notebook. It includes:
 3.  **Clear Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a learner's perspective.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and concludes with a functional prediction demonstration.
 
-***
 
 # LGM VIP: Next-Word Prediction with Neural Networks
 
@@ -54,7 +53,6 @@ This response is designed as a self-contained Jupyter Notebook. It includes:
 
 The goal of this project is to build a simple language model that can predict the most likely next word, given a sequence of preceding words. This is a fundamental task in Natural Language Processing (NLP) and is at the heart of modern AI tools like ChatGPT. We will use the text of "The Adventures of Sherlock Holmes" to train a neural network for this purpose.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -108,7 +106,6 @@ with open('sherlock_holmes_sample.txt', 'w') as f:
 print("Sample text file 'sherlock_holmes_sample.txt' created successfully.")
 ```
 
----
 
 ### **3. Step 1 & 2: Data Loading, Preprocessing, and EDA**
 
@@ -170,7 +167,6 @@ print(bigram_freq_df.head(10))
 ```
 **EDA Insights:** As expected, common English words ("the," "a," "of," "to") are the most frequent. The bigram analysis shows common pairings like "to his" and "the world," which gives us a baseline understanding of logical word sequences in the text.
 
----
 
 ### **4. Step 3 & 4: Sequence Generation**
 
@@ -196,7 +192,6 @@ for i in range(5):
     print(f"Input: {sequences[i][:-1]}  =>  Output: {sequences[i][-1]}")
 ```
 
----
 
 ### **5. Step 5: Data Encoding**
 
@@ -233,7 +228,6 @@ seq_length = X.shape[1]
 print(f"Sequence Length (for model input): {seq_length}")
 ```
 
----
 
 ### **6. Step 6: Neural Network Model Building and Training**
 
@@ -281,7 +275,6 @@ plt.legend()
 plt.show()
 ```
 
----
 
 ### **7. Step 7: Testing the Final Model**
 
