@@ -48,7 +48,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for the specific task of predicting price direction.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear summary of the model's performance.
 
-***
 
 # NeuroTrade: AMZN Stock Price Direction Prediction
 
@@ -56,7 +55,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 The goal of this project is to build a machine learning model to predict the daily price direction of Amazon (AMZN) stock. The prediction is a binary classification problem: will the closing price of a given day be higher than its opening price? A successful model (defined as having an AUC > 0.515) can serve as a signal for a simple trading strategy: buy if the model predicts the price will go up, and sell (or do nothing) if it predicts it will go down.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -133,7 +131,6 @@ test_df.to_csv('AMZN_test.csv', index=False)
 print("Sample AMZN data files created successfully.")
 ```
 
----
 
 ### **3. Data Loading and Preparation**
 
@@ -181,7 +178,6 @@ print(train_df['Direction'].value_counts(normalize=True))
 ```
 **Observation:** The target variable is reasonably balanced, with the price going up about 51% of the time in our synthetic training data. This means a simple accuracy score can be a useful metric, in addition to AUC.
 
----
 
 ### **4. Feature Engineering**
 
@@ -229,7 +225,6 @@ print("\nFeatures created. Shape of processed training data:", train_featured.sh
 print("Example features:\n", train_featured[['price_change', 'ma_5', 'rsi', 'macd']].head())
 ```
 
----
 
 ### **5. Model Training and Evaluation**
 
@@ -294,7 +289,6 @@ for name, model in models.items():
 **Evaluation on Validation Set:**
 Based on the validation results, the **XGBoost** model yields the highest ROC-AUC score, surpassing the required threshold of 0.515. Its performance, while modest, indicates it has a slight predictive edge over random guessing, which is typical for the difficult task of stock market prediction. We will select **XGBoost** as our final model.
 
----
 
 ### **6. Final Model Performance on Test Set**
 
