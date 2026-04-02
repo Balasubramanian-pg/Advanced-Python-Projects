@@ -50,7 +50,6 @@ This response is structured like a Jupyter Notebook. It includes:
 3.  **Explanation of Approach:** Before each code block, the logic and methodology are explained to show the thought process.
 4.  **Code, Results, and Visualizations:** Each section includes the necessary code, its output, and relevant plots to support the findings.
 
-***
 
 ## 23andMe: Sales Data Analysis
 
