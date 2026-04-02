@@ -55,7 +55,6 @@ This response is structured like a Jupyter Notebook. It includes:
 3.  **Explanation of Approach:** Before each code block or calculation, the logic and methodology are clearly explained.
 4.  **Code and Calculations:** The notebook provides the necessary code for Scenario 1 and detailed manual calculations for Scenario 2.
 
-***
 
 ## Uber: Driver Bonus and Profitability Analysis
 
