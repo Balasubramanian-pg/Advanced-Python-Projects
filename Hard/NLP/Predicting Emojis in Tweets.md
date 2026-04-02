@@ -43,7 +43,6 @@ This response is designed as a professional software project and report. It incl
 3.  **An `instructions.md` file:** A clear, step-by-step guide on how to reproduce the experiment.
 4.  **A Detailed `report.md` file:** A comprehensive report that directly answers the four key questions from the assignment, framed for a technical reviewer.
 
-***
 
 ### Project Structure
 
@@ -60,7 +59,6 @@ Here is the file structure this solution will create and use:
 └── report.md                 # Write-up of findings and analysis
 ```
 
----
 
 ### 1. Setup and Data Generation
 
@@ -129,7 +127,6 @@ with open('requirements.txt', 'w') as f:
 print("requirements.txt file created.")
 ```
 
----
 
 ### **2. The Experiment Script: `emoji_predictor.py`**
 
@@ -254,7 +251,6 @@ if __name__ == "__main__":
 
 ```
 
----
 
 ### **3. Instructions to Reproduce Experiment**
 
@@ -305,7 +301,6 @@ The script will:
 You can now review these outputs to see the results of the experiment.
 ```
 
----
 
 ### **4. Report of Findings**
 
