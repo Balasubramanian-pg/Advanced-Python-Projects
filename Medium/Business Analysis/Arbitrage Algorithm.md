@@ -81,7 +81,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and the logic behind the arbitrage strategy, framed for a non-technical audience.
 4.  **A Final Write-up:** The analysis culminates in a clear summary of the most effective arbitrage strategy and its performance, as requested.
 
-***
 
 # United Ideas: Arbitrage Strategy for Apple Markets
 
@@ -89,7 +88,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 The goal of this project is to develop and optimize an arbitrage strategy for trading a single asset ("apples") across seven different markets. Starting with an initial capital of $1,000, the objective is to maximize the final capital over a one-month period (April 27 to May 28) by exploiting price discrepancies between the markets. The final output will be the most effective strategy and a detailed simulation of its performance.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -164,7 +162,6 @@ for config in market_configs:
 print("Sample market data files created successfully.")
 ```
 
----
 
 ### **3. Data Loading and Preparation**
 
@@ -195,7 +192,6 @@ print("Master DataFrame created. Shape:", master_df.shape)
 print(master_df.head())
 ```
 
----
 
 ### **4. Building the Arbitrage Simulation Engine**
 
@@ -292,7 +288,6 @@ def run_arbitrage_simulation(data, initial_capital, open_threshold, close_thresh
 
     return pd.DataFrame(portfolio_history).set_index('time')
 ```
----
 ### **5. Strategy Optimization**
 
 The performance of our strategy depends on several parameters. We will use a simple grid search to find the combination of parameters that yields the highest final portfolio value.
@@ -331,7 +326,6 @@ print("\n--- Best Strategy Found ---")
 print(f"Parameters: {best_params}")
 print(f"Final Portfolio Value: ${max_final_value:,.2f}")
 ```
----
 ### **6. Analysis of the Most Effective Strategy**
 
 Now we will visualize the performance of our best-performing strategy.
