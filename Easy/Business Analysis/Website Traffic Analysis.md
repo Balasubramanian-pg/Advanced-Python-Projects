@@ -35,7 +35,6 @@ This response is designed like a Jupyter Notebook. It includes:
 3.  **Explanation of Approach:** Before each code block, the logic and methodology are explained to show the thought process.
 4.  **Code, Results, and Interpretation:** Each section includes the necessary code, its output, and an interpretation of the findings.
 
-***
 
 ## Linkfire: Web Traffic Analysis
 
