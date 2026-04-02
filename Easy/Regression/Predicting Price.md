@@ -35,7 +35,6 @@ This response is designed like a professional data science report and Jupyter No
 3.  **Clear Explanations:** Before each major code block, the methodology and choices are clearly explained.
 4.  **A Comprehensive Writeup:** The analysis culminates in a clear summary of findings, model performance, and future recommendations.
 
-***
 
 ## Haensel AMS: Price Prediction Modeling
 
