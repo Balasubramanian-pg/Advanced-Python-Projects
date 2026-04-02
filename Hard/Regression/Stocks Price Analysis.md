@@ -75,7 +75,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Clear Explanations:** Before each major code block, the methodology and choices are clearly explained.
 4.  **A Complete Solution:** The notebook provides code to answer all questions, including the more complex tasks like the hand-crafted PACF plot, pytest test cases, and model assumption checks.
 
-***
 
 # RedCarpetUp: Stock Price Analysis and Prediction
 
@@ -83,7 +82,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 This project involves a comprehensive analysis of daily stock market data for two major Indian IT companies, Infosys (INFY) and Tata Consultancy Services (TCS), for the year 2015. The goal is to perform detailed feature engineering, create interactive visualizations, and build predictive models to forecast the next day's closing price for these stocks.
 
----
 
 ### **0. Setup and Data Generation**
 
@@ -166,7 +164,6 @@ tcs_df_gen.to_csv('TCS_2015.csv')
 print("Sample INFY and TCS data files created successfully.")
 ```
 
----
 
 ### **Part 1: Feature Engineering**
 
@@ -241,7 +238,6 @@ for symbol in stock_data:
 print("\nShock features created. INFY sample:")
 print(stock_data['INFY'][['Close', 'Volume', 'volume_shock', 'price_shock', 'price_shock_no_volume_shock']].tail())
 ```
----
 ### **Part 2: Data Visualization (Bokeh)**
 
 This section creates the requested interactive time-series plots using Bokeh. We'll focus on INFY for the main plot.
@@ -332,7 +328,6 @@ tcs_pacf_plot = plot_pacf_bokeh(stock_data['TCS']['Close'].dropna(), nlags=40, t
 show(infy_pacf_plot)
 show(tcs_pacf_plot)
 ```
----
 ### **Part 3: Data Modeling**
 
 This section builds, tests, and tunes models to predict the next day's closing price for INFY and TCS.
