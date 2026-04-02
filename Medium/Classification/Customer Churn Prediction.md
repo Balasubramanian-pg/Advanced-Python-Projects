@@ -62,7 +62,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Clear Explanations:** Before each major code block, the methodology and choices are clearly explained, framed for both a technical and business audience.
 4.  **A Complete Solution:** The notebook provides code, visualizations, and a clear narrative that directly answers all the assignment's questions.
 
-***
 
 # Sony Research: Telecom Customer Churn Prediction
 
@@ -70,7 +69,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 The goal of this project is to analyze a telecom customer dataset to understand the key drivers of customer churn and to build a predictive model that can identify customers at high risk of leaving. By accurately forecasting churn, the company can proactively engage with at-risk customers through targeted retention campaigns, thereby reducing revenue loss and improving customer loyalty.
 
----
 
 ### **1. Setup and Data Generation**
 
@@ -153,7 +151,6 @@ df.to_csv('Data_Science_Challenge.csv', index=False)
 print("Sample 'Data_Science_Challenge.csv' created successfully.")
 ```
 
----
 ### **2. Exploratory Analysis and Insight Extraction**
 
 The first step is to load the data and perform a thorough exploratory data analysis (EDA) to understand the characteristics of customers who churn.
@@ -224,7 +221,6 @@ plt.show()
 3.  **High Usage, High Churn:** Customers who churn tend to have higher daily call charges. This might seem counterintuitive (high-value customers leaving), but it could indicate that these are heavy users who are more likely to be sensitive to pricing and seek better deals from competitors.
 4.  **Voicemail Plan as a "Sticky" Feature:** Customers with a voicemail plan appear less likely to churn. This feature might increase the service's utility and make switching to a competitor more inconvenient.
 
----
 ### **3. Splitting the Dataset**
 
 **Reasoning for Splitting Strategy:**
@@ -247,7 +243,6 @@ print("\nChurn distribution in training data:\n", y_train.value_counts(normalize
 print("\nChurn distribution in test data:\n", y_test.value_counts(normalize=True))
 ```
 
----
 ### **4. Building a Predictive Model**
 
 #### **4.1. Choice of Algorithm**
@@ -294,7 +289,6 @@ xgb_pipeline.fit(X_train, y_train)
 print("Model training complete.")
 ```
 
----
 ### **5. Evaluating Model Performance**
 
 #### **5.1. Establishing Evaluation Metrics**
@@ -344,7 +338,6 @@ The XGBoost model demonstrates strong predictive power.
 -   The model achieves a high **recall for the "Churned" class**. This means it is very effective at its primary job: identifying the majority of customers who are at risk of leaving.
 -   The **precision** for the "Churned" class is lower than the recall. This is a common trade-off in churn modeling. It means that to catch most of the churners (high recall), the model also flags some customers who ultimately would not have churned (lower precision). The Precision-Recall curve visualizes this trade-off: we can increase precision by setting a higher probability threshold, but this will come at the cost of lower recall. For a retention campaign, high recall is often prioritized.
 
----
 ### **6. Potential Issues with Model Deployment**
 
 Deploying this model into a production environment requires careful consideration of several potential issues:
