@@ -74,7 +74,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a non-technical "new city manager."
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear set of findings and recommendations.
 
-***
 
 # Airbnb: Dublin Supply and Demand Analysis
 
@@ -83,7 +82,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 **Date:** [Current Date]
 **Subject:** Analysis of Guest Demand and Host Supply in Dublin
 
----
 
 ### **1. Executive Summary**
 
@@ -98,7 +96,6 @@ This report provides a deep dive into the Dublin market by analyzing guest searc
 **Core Recommendation:**
 The primary strategic focus should be on **recruiting new hosts who can offer "Entire Home/Apt" listings**, especially those suitable for 1-2 guests. Additionally, we should launch initiatives to educate existing hosts on the financial benefits of opening their calendars for peak weekend demand and accepting more advance bookings.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -171,7 +168,6 @@ contacts_df.to_csv('contacts.tsv', sep='\t', index=False)
 
 print("Sample datasets created successfully.")
 ```
----
 ### **3. Data Loading and Preparation**
 
 The first step in our analysis is to load and clean the provided datasets.
@@ -198,7 +194,6 @@ print(searches[['ds', 'ds_checkin', 'n_nights', 'checkin_day_of_week', 'filter_r
 print("\nSample of contacts with new features:")
 print(contacts[['id_guest', 'ds_checkin', 'is_accepted', 'booking_lead_days']].head())
 ```
----
 ### **4. Understanding Guest Demand**
 
 We will start by analyzing the `searches` data to understand what potential guests are looking for in Dublin.
@@ -245,7 +240,6 @@ plt.show()
 ```
 **Insight:** The demand is overwhelmingly for **"Entire home/apt"**. Guests strongly prefer to have a private space to themselves. "Private room" is a distant second, and "Shared room" has very little demand.
 
----
 ### **5. Understanding Host Supply and Behavior**
 
 Now we turn to the `contacts` data to see what is actually being booked and which inquiries hosts tend to accept.
@@ -275,7 +269,6 @@ plt.show()
 ```
 **Insight:** There is a strong relationship between how far in advance a guest books and the likelihood of the host accepting. **Inquiries made well in advance (1-3 months) have a much higher acceptance rate** than last-minute requests. Hosts appear to be reluctant or unable to accommodate same-day or next-day bookings.
 
----
 ### **6. Identifying the Gaps**
 
 This is the most critical part of the analysis, where we compare guest demand with host supply to find mismatches and opportunities.
