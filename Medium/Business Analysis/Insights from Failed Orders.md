@@ -53,7 +53,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 4.  **A Complete Solution:** The notebook provides code to answer all questions, including the bonus task involving geospatial analysis with `h3` and `folium`.
 5.  **Actionable Insights:** Each section concludes with a summary of the findings and what they mean for the business.
 
-***
 
 # Gett: Analysis of Unsuccessful Orders
 
@@ -61,7 +60,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 This project aims to analyze a dataset of unsuccessful ride orders from Gett to understand the primary reasons for failure. By investigating when, why, and where these failures occur, we can provide actionable insights to the product and operations teams to improve the driver-rider matching system, reduce cancellations, and enhance the overall customer experience.
 
----
 
 ### **1. Setup and Data Generation**
 
@@ -126,7 +124,6 @@ offers_df_gen.to_csv('data_offers.csv', index=False)
 print("Sample data files created successfully.")
 ```
 
----
 
 ### **2. Data Loading and Preparation**
 
@@ -158,7 +155,6 @@ print("Data loaded and prepared. Sample:")
 print(orders[['order_datetime', 'hour_of_day', 'failure_reason']].head())
 ```
 
----
 
 ### **3. Analysis and Answering Questions**
 
@@ -278,7 +274,6 @@ plt.show()
 -   The **lowest ETAs are in the early morning (2-5 AM)**, when there is minimal traffic on the roads.
 -   **High ETAs are a likely cause of both "System Rejects" (if all nearby drivers have long ETAs and are filtered out) and "Client Cancellations" (if the user is shown a long wait time).**
 
----
 
 ### **5. BONUS: Hexagonal Visualization**
 
