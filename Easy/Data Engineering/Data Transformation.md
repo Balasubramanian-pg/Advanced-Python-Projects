@@ -84,7 +84,6 @@ This response is designed like a professional data engineering script and report
 3.  **Explanation of the Approach:** The code is broken down into logical functions with clear explanations of the methodology, particularly how nested JSON and different event types are handled.
 4.  **Final Output Generation:** The script creates the three specified CSV files with the exact formatting rules (quoting, date format, timezone) requested in the assignment.
 
-***
 
 ## Chama: JSON Event Processing
 
