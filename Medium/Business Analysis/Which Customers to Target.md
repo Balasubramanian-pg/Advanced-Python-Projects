@@ -78,7 +78,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
     -   Using the model to score the test set and generate a list of targeted customers.
 3.  **A Detailed Write-up:** A separate section, as requested, provides a clear and concise explanation of the approach used, framed for a business and technical audience.
 
-***
 
 # Starbucks: Promotion Response Modeling and Targeting Strategy
 
@@ -86,7 +85,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 
 The goal of this project is to analyze the results of a promotional A/B test, build a model to identify customers most likely to be influenced by the promotion, and develop a targeted strategy that maximizes both Incremental Response Rate (IRR) and Net Incremental Revenue (NIR).
 
----
 
 ### **1. Setup and Data Generation**
 
@@ -159,7 +157,6 @@ test_df_gen.to_csv('Test.csv', index=False)
 print("Sample Training.csv and Test.csv created successfully.")
 ```
 
----
 ### **2. Task 1: Analyze Experiment Results**
 
 First, let's load the data and analyze the overall impact of the promotion.
@@ -236,7 +233,6 @@ print(f"Net Incremental Revenue (NIR): ${NIR_simplified:,.2f}")
 
 **Conclusion for Task 1:** The experiment confirms that the promotion is effective and profitable when applied to the entire customer base. The next step is to see if we can make it *even more* profitable by targeting only the most responsive customers.
 
----
 
 ### **3. Task 2: Build a Model for Customer Targeting**
 
@@ -342,7 +338,6 @@ test_results(promotion_strategy)
 
 By targeting only the top 30% of customers most likely to be influenced by the promotion, we significantly improved our key metrics. The **Incremental Response Rate (IRR) increased by over 5%**, and the **Net Incremental Revenue (NIR) increased by over $3,400**, despite sending out far fewer promotions. This demonstrates the power of a targeted approach.
 
----
 ### **4. Task 3: Score the Test Set and Select Customers**
 
 Now, we apply our trained uplift model to the `Test.csv` data to identify the best customers to target in a future campaign.
@@ -369,7 +364,6 @@ print(f"\nScored the test set. Selected {len(submission_ids)} customers to targe
 print("Customer IDs saved to 'targeted_customer_ids.csv'.")
 ```
 
----
 ### **5. Task 4: Brief Explanation of Approach**
 
 #### **Methodology and Approach**
