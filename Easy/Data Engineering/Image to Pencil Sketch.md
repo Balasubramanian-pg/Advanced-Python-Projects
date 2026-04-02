@@ -35,7 +35,6 @@ This response is designed like a Jupyter Notebook. It includes:
 3.  **Code and Visualizations:** Each section includes the necessary code and displays the resulting images using `matplotlib`, which integrates well with programming environments like Jupyter.
 4.  **Experimentation and Refinements:** The solution goes beyond the basic requirements by demonstrating how to parameterize the effect and add further enhancements, as suggested in the assignment.
 
-***
 
 ## LGM VIP: Image to Pencil Sketch Transformation
 
