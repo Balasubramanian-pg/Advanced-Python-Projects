@@ -59,7 +59,6 @@ This response is designed as a self-contained Jupyter Notebook and professional 
     *   Model Training, Selection, and Evaluation.
 3.  **A Detailed Write-up:** The analysis culminates in a clear summary of the findings, model performance, and a discussion of the research mindset and potential next steps, as requested.
 
-***
 
 # NoBroker: Predictive Modeling of Property Interactions
 
@@ -75,7 +74,6 @@ This project will follow a structured data science workflow:
 4.  **Predictive Modeling:** Build and evaluate machine learning models (specifically, regression models) to predict the interaction counts.
 5.  **Conclusion & Next Steps:** Summarize the findings and suggest future research directions.
 
----
 
 ### **2. Setup and Data Generation**
 
@@ -161,7 +159,6 @@ def generate_sample_data(n_properties=5000, n_interactions=50000):
 # Generate the data
 generate_sample_data()
 ```
----
 ### **3. Step 1: Data Loading, Cleaning, and Merging**
 
 This is the foundational step where we bring our disparate data sources together into a single, clean dataset.
@@ -222,7 +219,6 @@ df['photo_count'].fillna(0, inplace=True)
 print("\nProperties and Photos merged. DataFrame shape:", df.shape)
 print(df.head())
 ```
----
 ### **4. Step 2: Feature Engineering**
 
 Our goal is to predict interactions within 3 and 7 days. We need to create these target variables by counting the interactions from the `interactions` DataFrame that fall within the specified time windows after a property's `activation_date`.
@@ -250,7 +246,6 @@ df['activation_day_of_week'] = df['activation_date'].dt.day_name()
 print("Target variables created. Sample:")
 print(df[['property_id', 'activation_date', 'interactions_3_days', 'interactions_7_days']].head())
 ```
----
 ### **5. Step 3: Exploratory Data Analysis (EDA)**
 
 Let's explore the relationships between our features and the newly created target variables. We will focus on `interactions_7_days` for simplicity in the EDA.
@@ -288,7 +283,6 @@ plt.show()
 -   **Correlations:** `photo_count` (0.42) and `rent` (0.41) have the strongest positive correlations with 7-day interactions. Properties with more photos and higher rent tend to attract more interest. `property_age` (-0.30) has a negative correlation, indicating newer properties are more popular.
 -   **Locality Matters:** There are clear differences in the median number of interactions based on `locality`. 'Indiranagar' and 'Koramangala' appear to be high-demand areas in our synthetic data.
 
----
 ### **6. Step 4: Predictive Modeling**
 
 We will now build regression models to predict `interactions_3_days` and `interactions_7_days`. We will use tree-based ensemble models as they are well-suited for this type of data (mix of variable types, non-linear relationships, skewed target).
@@ -345,7 +339,6 @@ print("-" * 50)
 **Model Performance:**
 The XGBoost model is able to explain **~80% (R² = 0.803)** of the variance in the number of 7-day interactions. The average prediction error (RMSE) is approximately **3.3 interactions**. This is a strong result, indicating that the property features are highly predictive of user engagement in the first week. A similar process would be followed to build a model for 3-day interactions.
 
----
 ### **7. Conclusion and Research Mindset**
 
 #### **Summary of Findings**
