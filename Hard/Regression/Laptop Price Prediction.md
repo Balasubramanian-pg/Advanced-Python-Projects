@@ -40,7 +40,6 @@ Here's a step-by-step plan:
 
 **Objective:** Define and train a machine learning model to predict laptop prices (`buynow_price`) minimizing RMSE.
 
----
 
 ### **Step 1: Setup and Data Loading**
 
@@ -193,7 +192,6 @@ Based on EDA, think about potential new features or transformations.
 - **'state'**: If it refers to new/used, it's an important categorical feature.
     
 
----
 
 ### **Step 3: Data Preprocessing Pipeline**
 
@@ -660,7 +658,6 @@ plt.title('Residuals vs. Predicted Prices')
 plt.show()
 ```
 
----
 
 ### **Step 7: Conclusion and Reflection**
 
@@ -694,6 +691,5 @@ Summarize your findings, discuss model limitations, and suggest future improveme
 - **Deployment Considerations:** How would this model be deployed in a production environment? What latency requirements would it have?
     
 
----
 
 This detailed plan should guide you through the Allegro take-home assignment. Remember to keep your Jupyter Notebook clean, well-commented, and reflective of your thought process, showing intermediate steps and discarded approaches. Good luck!
