@@ -53,7 +53,6 @@ In addition to the code which solves the task please turn in a text file or pdf 
 2. How do you evaluate your performance?
 3. Where are the weaknesses of your approach? What has to be considered when applying an approach like this in practice?
 
----
 
 [1] _Chameleons in imagined conversations: A new approach to understanding coordination of linguistic style in dialogs_. Cristian Danescu-Niculescu-Mizil and Lillian Lee. Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics, ACL 2011.
 
@@ -67,7 +66,6 @@ This response is designed as a professional software project. It includes:
 3.  **A `requirements.txt` file:** As requested, this file lists the necessary dependencies.
 4.  **A Detailed Write-up:** A separate `README.md`-style text file is provided to answer the three core questions about the approach, evaluation, and weaknesses, framed for a technical reviewer.
 
-***
 
 ### Project Structure
 
@@ -85,7 +83,6 @@ Here is the file structure this solution will create and use:
 └── README.md                 # Write-up answering the assignment questions
 ```
 
----
 
 ### 1. Setup and Data Generation
 
@@ -188,7 +185,6 @@ with open('requirements.txt', 'w') as f:
 print("requirements.txt file created.")
 ```
 
----
 
 ### **2. The Solution: `match_replies.py`**
 
@@ -351,7 +347,6 @@ if __name__ == "__main__":
     ```
 3.  This will generate the `test_missing_with_predictions.txt` file in your root directory.
 
----
 
 ### **3. Write-up: Answering the Core Questions**
 
