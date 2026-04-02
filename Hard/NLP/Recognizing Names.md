@@ -57,7 +57,6 @@ This response is designed as a professional software project and report. It incl
 3.  **A `requirements.txt` file:** As is standard practice, this file lists the necessary dependencies.
 4.  **A Detailed `report.md` file:** A comprehensive report that describes the methodology, analyzes model performance with the requested metrics, discusses misclassifications, and outlines the overall approach.
 
-***
 
 ### Project Structure
 
@@ -73,7 +72,6 @@ Here is the file structure this solution will create and use:
 └── report.md                 # Write-up of findings and analysis
 ```
 
----
 
 ### 1. Setup and Data Generation
 
@@ -139,7 +137,6 @@ with open('requirements.txt', 'w') as f:
 print("requirements.txt file created.")
 ```
 
----
 
 ### **2. The Solution: `name_classifier.py`**
 
@@ -316,7 +313,6 @@ if __name__ == "__main__":
     run_evaluation()
 
 ```
----
 
 ### **3. Report and Analysis**
 
