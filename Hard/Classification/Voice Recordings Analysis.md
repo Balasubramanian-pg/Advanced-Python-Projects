@@ -93,14 +93,12 @@ This response is designed as a self-contained Jupyter Notebook and professional 
 3.  **Business-Friendly Explanations:** Each section includes clear explanations of the methodology and interpretation of the results, framed for a non-technical audience.
 4.  **Visualizations and Actionable Insights:** The analysis is supported by relevant plots and culminates in a clear summary of findings.
 
-***
 
 # Sandvik: Gender Recognition from Voice
 
 **Prepared by:** [Your Name]
 **Date:** [Current Date]
 
----
 
 ### **1. Introduction & Business Objective**
 
@@ -108,7 +106,6 @@ The goal of this project is to build a machine learning model capable of predict
 
 The final model could be integrated into various enterprise applications, such as personalizing user experiences in voice-controlled systems, segmenting customer feedback for targeted analysis, or enhancing security applications. This report details the entire process, from data extraction and feature engineering to model training, evaluation, and a discussion of potential business benefits.
 
----
 
 ### **2. Setup and Simulated Data Environment**
 
@@ -200,7 +197,6 @@ def generate_sample_data(base_dir='voxforge_data', num_users=5):
 generate_sample_data()
 ```
 
----
 
 ### **3. Data Extraction and Feature Engineering**
 
@@ -305,7 +301,6 @@ print("Feature extraction complete. DataFrame head:")
 print(df.head())
 ```
 
----
 
 ### **4. Exploratory Data Analysis and Feature Selection**
 
@@ -341,7 +336,6 @@ plt.show()
 -   **Unexpected Insights (c):** `skewness` and `kurtosis` do not show a clear, separable pattern in this synthetic data. In real-world data, they might capture more subtle qualities of speech, but here they appear less useful than the core frequency metrics.
 -   **Potential Issues (d):** The primary issue is **collinearity**. Including highly correlated features like `mean_freq` and `median_freq` can be problematic for some models (like Logistic Regression) by making their coefficient estimates unstable. For tree-based models like Random Forest, this is less of an issue.
 
----
 
 ### **5. Model Building and Evaluation**
 
@@ -413,7 +407,6 @@ for name, model in models.items():
     -   **Start Simple:** Always begin with a simple, interpretable model like **Logistic Regression**. If its performance is "good enough" for the business need (e.g., >95% accuracy), there might be no reason to use a more complex model. Its interpretability is a huge advantage, as you can easily explain *why* it made a certain decision.
     -   **When to Use Complexity:** If the simple model is not accurate enough, move to more sophisticated models like **Random Forest** or **XGBoost**. These models can capture non-linearities and feature interactions that a linear model cannot. The trade-off is that they are "black boxes"—harder to interpret. You would choose XGBoost over Random Forest if you need to squeeze out the last few percentage points of accuracy for a critical application.
 
----
 
 ### **6. Business Application and Benefits**
 
